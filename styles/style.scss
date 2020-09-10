@@ -38,6 +38,9 @@ a {
   justify-content: center;
 }
 
+.j-around {
+  justify-content: space-around;
+}
 .a-center {
   align-items: center;
 }
@@ -156,7 +159,7 @@ nav {
     border-radius: 50%;
   }
   button {
-    background-color: #fff;
+    background-color: $light-text;
     border: none;
     padding: 1rem;
   }
@@ -180,5 +183,56 @@ nav {
   background-color: $third-reason;
   button {
     color: $third-reason;
+  }
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: #000;
+  a {
+    color: $light-text;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: $imp-text;
+    padding: 2rem 0;
+  }
+  .top-ftr {
+    border: 1px #181818;
+    border-style: solid none;
+    padding: 1rem 5rem;
+    font-weight: $imp-text;
+  }
+  .top-ftr-logo {
+    border-radius: 50%;
+    background-color: #000;
+    font-size: 2.5rem;
+    border: 1px solid #181818;
+    padding: 2rem;
+  }
+  .middle-ftr {
+    padding: 0 5rem 2rem;
+    text-align: center;
+    color: $light-text;
+    font-size: 1.2rem;
+    a {
+      color: $primary-color;
+    }
+    .middle-ftr-item {
+      flex-basis: (100%/3);
+    }
+  }
+  .search-btn {
+    background-color: #181818;
+    border: none;
+    color: $light-text;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .btm-ftr {
+    background-color: #1f1f1f;
+    color: $third-reason;
+    padding: 1.7rem 1rem;
   }
 }
