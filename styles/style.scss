@@ -1,0 +1,47 @@
+//vars
+$primary-color: #d35649;
+$light-text: #fff;
+$dark-text: #4c4851;
+
+//general styles
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.a-center {
+    align-items: center;
+}
+
+//navbar
+
+nav {
+  background: $primary-color;
+  padding: 2.5rem;
+  a {
+    color: $light-text;
+    font-size: 1.4rem;
+  }
+  i {
+      font-size: 1.8rem;
+      margin: 0.5rem;
+  }
+  .brand {
+      font-size: 2.1rem;
+      font-weight: bold;
+      margin-top: -15px;
+  }
+}

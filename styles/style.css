@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.j-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.a-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  background: #d35649;
+  padding: 2.5rem;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+nav i {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+}
+
+nav .brand {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: -15px;
+}
+/*# sourceMappingURL=style.css.map */
