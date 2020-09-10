@@ -65,7 +65,7 @@ nav {
   background-size: cover;
   padding: 15rem 30%;
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     font-weight: $very-imp-text;
     text-align: center;
     color: $light-text;
@@ -101,17 +101,34 @@ nav {
     color: $dark-text;
     @include rounded-border();
   }
-  margin-bottom: 4rem;
 }
 
 //steps
 
-.four-steps{
-  margin: 4000px;
+.four-steps {
+  padding: 4rem 6rem;
+  text-align: center;
+  line-height: 1.3;
   h1 {
     color: $primary-color;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: $imp-text;
     text-align: center;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 7rem;
+  }
+  .icon {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: $imp-text;
+    padding: 1.5rem 0;
+  }
+  .step-text {
+    font-size: 1.5rem;
   }
 }

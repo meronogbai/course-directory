@@ -56,11 +56,10 @@ nav .brand {
   background: #eee url("/images/homepage-bg.jpg") left 0 top 80% no-repeat;
   background-size: cover;
   padding: 15rem 30%;
-  margin-bottom: 4rem;
 }
 
 .search h1 {
-  font-size: 2.6rem;
+  font-size: 2.9rem;
   font-weight: 900;
   text-align: center;
   color: #fff;
@@ -103,13 +102,37 @@ nav .brand {
 }
 
 .four-steps {
-  margin: 4000px;
+  padding: 4rem 6rem;
+  text-align: center;
+  line-height: 1.3;
 }
 
 .four-steps h1 {
   color: #d35649;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
+}
+
+.four-steps .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 7rem;
+}
+
+.four-steps .icon {
+  font-size: 3rem;
+}
+
+.four-steps h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+
+.four-steps .step-text {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
