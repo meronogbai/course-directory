@@ -1,29 +1,41 @@
 //vars
 $primary-color: #d35649;
+$secondary-color: #bebdbd;
 $light-text: #fff;
 $dark-text: #4c4851;
+$imp-text: 700;
+$very-imp-text: 900;
 
+//mixins
+
+@mixin rounded-border {
+  border-radius: 7px;
+}
 //general styles
 
 html {
   font-size: 62.5%;
+  color: $dark-text;
 }
 
 a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .j-between {
-    justify-content: space-between;
+  justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
 }
 
 .a-center {
-    align-items: center;
+  align-items: center;
 }
 
 //navbar
@@ -36,12 +48,70 @@ nav {
     font-size: 1.4rem;
   }
   i {
-      font-size: 1.8rem;
-      margin: 0.5rem;
+    font-size: 1.8rem;
+    margin: 0.5rem;
   }
   .brand {
-      font-size: 2.1rem;
-      font-weight: bold;
-      margin-top: -15px;
+    font-size: 2.1rem;
+    font-weight: $imp-text;
+    margin-top: -15px;
+  }
+}
+
+//section with bg image and search box
+
+.search {
+  background: #eee url("/images/homepage-bg.jpg") left 0 top 80% no-repeat;
+  background-size: cover;
+  padding: 15rem 30%;
+  h1 {
+    font-size: 2.6rem;
+    font-weight: $very-imp-text;
+    text-align: center;
+    color: $light-text;
+  }
+  .search-box {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba($secondary-color, 0.8);
+    font-size: 1.7rem;
+    @include rounded-border();
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .input-form {
+      height: 3rem;
+      input {
+        border: none;
+      }
+      .search-btn {
+        background-color: $primary-color;
+        color: $light-text;
+        line-height: 3rem;
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  .small-btn {
+    font-size: 1.8rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: $secondary-color;
+    color: $dark-text;
+    @include rounded-border();
+  }
+  margin-bottom: 4rem;
+}
+
+//steps
+
+.four-steps{
+  margin: 4000px;
+  h1 {
+    color: $primary-color;
+    font-size: 1.8rem;
+    font-weight: $imp-text;
+    text-align: center;
   }
 }

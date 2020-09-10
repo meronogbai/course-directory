@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  color: #4c4851;
 }
 
 a {
@@ -16,6 +17,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.j-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .a-center {
@@ -41,7 +48,68 @@ nav i {
 
 nav .brand {
   font-size: 2.1rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: -15px;
+}
+
+.search {
+  background: #eee url("/images/homepage-bg.jpg") left 0 top 80% no-repeat;
+  background-size: cover;
+  padding: 15rem 30%;
+  margin-bottom: 4rem;
+}
+
+.search h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+.search .search-box {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(190, 189, 189, 0.8);
+  font-size: 1.7rem;
+  border-radius: 7px;
+}
+
+.search .search-box h2 {
+  margin-bottom: 1rem;
+}
+
+.search .search-box .input-form {
+  height: 3rem;
+}
+
+.search .search-box .input-form input {
+  border: none;
+}
+
+.search .search-box .input-form .search-btn {
+  background-color: #d35649;
+  color: #fff;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+}
+
+.search .small-btn {
+  font-size: 1.8rem;
+  margin: auto;
+  padding: 1rem;
+  background-color: #bebdbd;
+  color: #4c4851;
+  border-radius: 7px;
+}
+
+.four-steps {
+  margin: 4000px;
+}
+
+.four-steps h1 {
+  color: #d35649;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
