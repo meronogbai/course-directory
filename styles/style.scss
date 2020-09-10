@@ -3,6 +3,10 @@ $primary-color: #d35649;
 $secondary-color: #bebdbd;
 $light-text: #fff;
 $dark-text: #4c4851;
+$first-reason: #e27f65;
+$second-reason: #519bd7;
+$third-reason: #99a4a6;
+$mildly-imp-text: 600;
 $imp-text: 700;
 $very-imp-text: 900;
 
@@ -130,5 +134,51 @@ nav {
   }
   .step-text {
     font-size: 1.5rem;
+  }
+}
+
+//reasons
+
+.reason {
+  color: $light-text;
+  padding: 1rem 5rem;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: $mildly-imp-text;
+  }
+  p {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+  img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+  }
+  button {
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+  }
+}
+
+.reason:nth-child(1) {
+  background-color: $first-reason;
+  button {
+    color: $first-reason;
+  }
+}
+
+.reason:nth-child(2) {
+  background-color: $second-reason;
+  button {
+    color: $second-reason;
+  }
+}
+
+.reason:nth-child(3) {
+  background-color: $third-reason;
+  button {
+    color: $third-reason;
   }
 }

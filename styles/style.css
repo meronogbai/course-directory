@@ -135,4 +135,55 @@ nav .brand {
 .four-steps .step-text {
   font-size: 1.5rem;
 }
+
+.reason {
+  color: #fff;
+  padding: 1rem 5rem;
+}
+
+.reason h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reason p {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.reason img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+.reason button {
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+}
+
+.reason:nth-child(1) {
+  background-color: #e27f65;
+}
+
+.reason:nth-child(1) button {
+  color: #e27f65;
+}
+
+.reason:nth-child(2) {
+  background-color: #519bd7;
+}
+
+.reason:nth-child(2) button {
+  color: #519bd7;
+}
+
+.reason:nth-child(3) {
+  background-color: #99a4a6;
+}
+
+.reason:nth-child(3) button {
+  color: #99a4a6;
+}
 /*# sourceMappingURL=style.css.map */
