@@ -9,6 +9,8 @@ $third-reason: #99a4a6;
 $mildly-imp-text: 600;
 $imp-text: 700;
 $very-imp-text: 900;
+$tablet: 1023px;
+$phone: 767px;
 
 //mixins
 
@@ -17,6 +19,11 @@ $very-imp-text: 900;
 }
 //general styles
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
   color: $dark-text;
@@ -50,37 +57,63 @@ a {
 
 nav {
   background: $primary-color;
-  padding: 2.5rem;
+  padding: 2rem;
   a {
     color: $light-text;
     font-size: 1.4rem;
   }
   i {
-    font-size: 1.8rem;
     margin: 0.5rem;
   }
   .brand {
-    font-size: 2.1rem;
+    font-size: 4rem;
     font-weight: $imp-text;
     margin-top: -15px;
+  }
+  .nav-links {
+    i {
+      font-size: 1.4rem;
+    }
+    @media (max-width: $tablet) {
+      .nav-link {
+        margin: 0 1.5rem;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $phone) {
+    flex-direction: column;
+    align-items: center;
+    i {
+      margin: 1rem 0;
+    }
   }
 }
 
 //section with bg image and search box
 
 .search {
-  background: #eee url("/images/homepage-bg.jpg") left 0 top 80% no-repeat;
+  background: #eee url("/images/homepage-bg.jpg") center top no-repeat;
   background-size: cover;
-  padding: 15rem 30%;
+  padding: 15rem 25%;
+  @media (max-width: $phone) {
+    padding: 8rem 2rem 1rem;
+    height: 90vh;
+  }
   h1 {
     font-size: 2.9rem;
     font-weight: $very-imp-text;
     text-align: center;
     color: $light-text;
+    @media (max-width: $phone) {
+      font-weight: $imp-text;
+    }
   }
   .search-box {
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 4rem;
     background-color: rgba($secondary-color, 0.8);
     font-size: 1.7rem;
     @include rounded-border();
@@ -88,15 +121,38 @@ nav {
       margin-bottom: 1rem;
     }
     .input-form {
-      height: 3rem;
       input {
         border: none;
+        width: 80%;
+        display: block;
+        line-height: 3rem;
       }
       .search-btn {
+        width: 10rem;
         background-color: $primary-color;
         color: $light-text;
         line-height: 3rem;
-        padding: 0 1.5rem;
+        text-align: center;
+        @media (max-width: $tablet) {
+          background-color: $second-reason;
+        }
+      }
+    }
+    @media (max-width: $phone) {
+      padding: 2rem;
+      .input-form {
+        flex-direction: column;
+        justify-content: space-between;
+
+        input {
+          width: 100%;
+        }
+        .search-btn {
+          margin: auto;
+          width: 100%;
+          background-color: $primary-color;
+          margin-top: 1.5rem;
+        }
       }
     }
   }
@@ -128,6 +184,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 7rem;
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
   .icon {
     font-size: 3rem;
@@ -164,6 +224,17 @@ nav {
     background-color: $light-text;
     border: none;
     padding: 1rem;
+  }
+  @media (max-width: $tablet) {
+    padding: 1rem 3rem;
+  }
+  @media (max-width: $phone) {
+    flex-direction: column-reverse;
+    img {
+      margin-bottom: 1rem;
+      width: 15rem;
+      height: 15rem;
+    }
   }
 }
 
@@ -204,13 +275,22 @@ footer {
     border-style: solid none;
     padding: 1rem 5rem;
     font-weight: $imp-text;
-  }
-  .top-ftr-logo {
-    border-radius: 50%;
-    background-color: #000;
-    font-size: 2.5rem;
-    border: 1px solid #181818;
-    padding: 2rem;
+    .top-ftr-logo {
+      border-radius: 50%;
+      background-color: #000;
+      font-size: 2.5rem;
+      border: 1px solid #181818;
+      padding: 2rem;
+    }
+    @media (max-width: $phone) {
+      flex-direction: column;
+      & > * {
+        margin: 2rem 0;
+      }
+      div {
+        margin: 2rem 0;
+      }
+    }
   }
   .middle-ftr {
     padding: 0 5rem 2rem;
@@ -222,6 +302,9 @@ footer {
     }
     .middle-ftr-item {
       flex-basis: (100%/3);
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
     }
   }
   .search-btn {
@@ -236,16 +319,5 @@ footer {
     background-color: #1f1f1f;
     color: $third-reason;
     padding: 1.7rem 1rem;
-  }
-}
-
-// Media queries
-
-@media (max-width: 1023px) {
-  .four-steps {
-    .wrapper {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-    }
   }
 }
