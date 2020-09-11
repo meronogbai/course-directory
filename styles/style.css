@@ -533,6 +533,12 @@ footer .btm-ftr {
           box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
 }
 
+@media (max-width: 767px) {
+  .details {
+    margin-top: 3rem;
+  }
+}
+
 .details h1 {
   font-size: 2rem;
   color: #d35649;
@@ -625,6 +631,10 @@ footer .btm-ftr {
   font-size: 1.8rem;
   text-align: center;
   padding: 1.5rem 0;
+}
+
+.student-reviews i {
+  font-size: 3rem;
 }
 
 .student-reviews .student-review-items > * {

@@ -435,6 +435,9 @@ footer {
   font-weight: $imp-text;
   padding: 0.5rem;
   box-shadow: -0.3rem -0.1rem 1rem 0.1rem $secondary-color;
+  @media (max-width: $phone) {
+    margin-top: 3rem;
+  }
   h1 {
     font-size: 2rem;
     color: $primary-color;
@@ -508,7 +511,9 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
   }
-
+  i {
+    font-size: 3rem;
+  }
   .student-review-items > * {
     display: flex;
     margin: 1rem 0;
