@@ -393,6 +393,15 @@ nav .nav-links i {
   padding: 2rem;
 }
 
+@media (max-width: 767px) {
+  .filter .filter-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .filter .filter-items > * {
   margin: 3rem 0.5rem;
 }
@@ -415,6 +424,7 @@ nav .nav-links i {
 
 .filter input {
   display: block;
+  width: 100%;
 }
 
 .filter select {
@@ -448,5 +458,46 @@ nav .nav-links i {
 
 .filter .filter-btns .filter-btn-2 {
   background: #e5ab5b;
+}
+
+.results {
+  margin-bottom: 4rem;
+}
+
+.results h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.results h3 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.results h3 span {
+  font-weight: 700;
+}
+
+.results .results-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.results .results-wrapper .result-item {
+  background: #d95f4b;
+  padding: 9rem 0 12rem;
+}
+
+@media (max-width: 1023px) {
+  .results .results-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -331,6 +331,11 @@ nav {
   background: rgba($secondary-color, 0.8);
   margin: 4rem 0;
   padding: 2rem;
+  .filter-items {
+    @media (max-width: $phone) {
+      flex-direction: column;
+    }
+  }
   .filter-items > * {
     margin: 3rem 0.5rem;
   }
@@ -349,6 +354,7 @@ nav {
   }
   input {
     display: block;
+    width: 100%;
   }
   select {
     border: none;
@@ -374,6 +380,38 @@ nav {
     }
     .filter-btn-2 {
       background: #e5ab5b;
+    }
+  }
+}
+
+//results
+
+.results {
+  margin-bottom: 4rem;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    color: $light-text;
+    span {
+      font-weight: $imp-text;
+    }
+  }
+  .results-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin: 0 2rem;
+    .result-item {
+      background: #d95f4b;
+      padding: 9rem 0 12rem;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
     }
   }
 }
