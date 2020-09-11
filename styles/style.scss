@@ -50,6 +50,10 @@ button {
   justify-content: center;
 }
 
+.j-end {
+  justify-content: flex-end;
+}
+
 .j-around {
   justify-content: space-around;
 }
@@ -412,6 +416,61 @@ footer {
     }
     @media (max-width: $tablet) {
       grid-template-columns: 1fr;
+    }
+  }
+}
+
+//details
+
+.details {
+  margin: 9rem 2rem;
+  font-weight: $imp-text;
+  padding: 0.5rem;
+  box-shadow: -0.3rem -0.1rem 1rem 0.1rem $secondary-color;
+  h1 {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+  .detail-items {
+    margin: 1rem 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+    .detail-item {
+      padding: 1rem 0;
+      border: 1px solid $secondary-color;
+      border-radius: 0.3rem;
+    }
+  }
+  span {
+    color: $second-reason;
+  }
+  button {
+    background-color: $second-reason;
+    color: $light-text;
+    padding: 0.5rem;
+    float: right;
+  }
+  .contact {
+    padding: 1rem 0;
+    clear: right;
+    i {
+      color: $second-reason;
+    }
+    .contact-item {
+      margin-left: 1rem;
+    }
+    @media (max-width: $phone) {
+      flex-direction: column;
+      align-items: center;
+      .contact-item {
+        margin: 0;
+        padding: 0.5rem;
+      }
     }
   }
 }
