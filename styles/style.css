@@ -451,8 +451,15 @@ footer .btm-ftr {
 
 .filter input,
 .filter select {
-  padding: 0.5rem 0.1rem;
+  padding: 0.5rem 5rem;
   border-radius: 0.3rem;
+}
+
+@media (max-width: 1023px) {
+  .filter input,
+  .filter select {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .filter .filter-btns {
