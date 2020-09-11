@@ -303,29 +303,29 @@ nav .nav-links i {
   color: #99a4a6;
 }
 
-.homepage-ftr {
+footer {
   padding-top: 2rem;
   background-color: #000;
 }
 
-.homepage-ftr a {
+footer a {
   color: #fff;
 }
 
-.homepage-ftr h4 {
+footer h4 {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 2rem 0;
 }
 
-.homepage-ftr .top-ftr {
+footer .top-ftr {
   border: 1px #181818;
   border-style: solid none;
   padding: 1rem 5rem;
   font-weight: 700;
 }
 
-.homepage-ftr .top-ftr .top-ftr-logo {
+footer .top-ftr .top-ftr-logo {
   border-radius: 50%;
   background-color: #000;
   font-size: 2.5rem;
@@ -334,38 +334,38 @@ nav .nav-links i {
 }
 
 @media (max-width: 767px) {
-  .homepage-ftr .top-ftr {
+  footer .top-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .homepage-ftr .top-ftr > * {
+  footer .top-ftr > * {
     margin: 2rem 0;
   }
-  .homepage-ftr .top-ftr div {
+  footer .top-ftr div {
     margin: 2rem 0;
   }
 }
 
-.homepage-ftr .middle-ftr {
+footer .middle-ftr {
   padding: 0 5rem 2rem;
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
 }
 
-.homepage-ftr .middle-ftr a {
+footer .middle-ftr a {
   color: #d35649;
 }
 
-.homepage-ftr .middle-ftr .middle-ftr-item {
+footer .middle-ftr .middle-ftr-item {
   -ms-flex-preferred-size: 33.33333%;
       flex-basis: 33.33333%;
 }
 
 @media (max-width: 1023px) {
-  .homepage-ftr .middle-ftr {
+  footer .middle-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -373,14 +373,14 @@ nav .nav-links i {
   }
 }
 
-.homepage-ftr .search-btn {
+footer .search-btn {
   background-color: #181818;
   color: #fff;
   line-height: 3rem;
   padding: 0 1.5rem;
 }
 
-.homepage-ftr .btm-ftr {
+footer .btm-ftr {
   background-color: #1f1f1f;
   color: #99a4a6;
   padding: 1.7rem 1rem;
