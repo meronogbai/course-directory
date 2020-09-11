@@ -20,6 +20,7 @@ $very-imp-text: 900;
 html {
   font-size: 62.5%;
   color: $dark-text;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -123,6 +124,7 @@ nav {
     text-align: center;
   }
   .wrapper {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 7rem;
@@ -234,5 +236,16 @@ footer {
     background-color: #1f1f1f;
     color: $third-reason;
     padding: 1.7rem 1rem;
+  }
+}
+
+// Media queries
+
+@media (max-width: 1023px) {
+  .four-steps {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
 }

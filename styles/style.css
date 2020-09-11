@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   color: #4c4851;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -120,6 +121,7 @@ nav .brand {
 }
 
 .four-steps .wrapper {
+  margin-top: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -250,5 +252,14 @@ footer .btm-ftr {
   background-color: #1f1f1f;
   color: #99a4a6;
   padding: 1.7rem 1rem;
+}
+
+@media (max-width: 1023px) {
+  .four-steps .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
