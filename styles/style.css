@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+input,
+button {
+  border: none;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +136,6 @@ nav .nav-links i {
 }
 
 .search .search-box .input-form input {
-  border: none;
   width: 80%;
   display: block;
   line-height: 3rem;
@@ -252,7 +256,6 @@ nav .nav-links i {
 
 .reason button {
   background-color: #fff;
-  border: none;
   padding: 1rem;
 }
 
@@ -300,29 +303,29 @@ nav .nav-links i {
   color: #99a4a6;
 }
 
-footer {
+.homepage-ftr {
   padding-top: 2rem;
   background-color: #000;
 }
 
-footer a {
+.homepage-ftr a {
   color: #fff;
 }
 
-footer h4 {
+.homepage-ftr h4 {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 2rem 0;
 }
 
-footer .top-ftr {
+.homepage-ftr .top-ftr {
   border: 1px #181818;
   border-style: solid none;
   padding: 1rem 5rem;
   font-weight: 700;
 }
 
-footer .top-ftr .top-ftr-logo {
+.homepage-ftr .top-ftr .top-ftr-logo {
   border-radius: 50%;
   background-color: #000;
   font-size: 2.5rem;
@@ -331,38 +334,38 @@ footer .top-ftr .top-ftr-logo {
 }
 
 @media (max-width: 767px) {
-  footer .top-ftr {
+  .homepage-ftr .top-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .top-ftr > * {
+  .homepage-ftr .top-ftr > * {
     margin: 2rem 0;
   }
-  footer .top-ftr div {
+  .homepage-ftr .top-ftr div {
     margin: 2rem 0;
   }
 }
 
-footer .middle-ftr {
+.homepage-ftr .middle-ftr {
   padding: 0 5rem 2rem;
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
 }
 
-footer .middle-ftr a {
+.homepage-ftr .middle-ftr a {
   color: #d35649;
 }
 
-footer .middle-ftr .middle-ftr-item {
+.homepage-ftr .middle-ftr .middle-ftr-item {
   -ms-flex-preferred-size: 33.33333%;
       flex-basis: 33.33333%;
 }
 
 @media (max-width: 1023px) {
-  footer .middle-ftr {
+  .homepage-ftr .middle-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -370,17 +373,80 @@ footer .middle-ftr .middle-ftr-item {
   }
 }
 
-footer .search-btn {
+.homepage-ftr .search-btn {
   background-color: #181818;
-  border: none;
   color: #fff;
   line-height: 3rem;
   padding: 0 1.5rem;
 }
 
-footer .btm-ftr {
+.homepage-ftr .btm-ftr {
   background-color: #1f1f1f;
   color: #99a4a6;
   padding: 1.7rem 1rem;
+}
+
+.filter {
+  text-align: center;
+  background: rgba(190, 189, 189, 0.8);
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.filter .filter-items > * {
+  margin: 3rem 0.5rem;
+}
+
+.filter h1 {
+  font-size: 1.8rem;
+  color: #99a4a6;
+}
+
+.filter h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.filter h1,
+.filter h2 {
+  font-weight: 700;
+}
+
+.filter input {
+  display: block;
+}
+
+.filter select {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  background: #fff url("/images/caret-down-solid.svg") center right 0.2rem no-repeat;
+}
+
+.filter input,
+.filter select {
+  padding: 0.5rem 0.1rem;
+  border-radius: 0.3rem;
+}
+
+.filter .filter-btns {
+  text-align-last: left;
+}
+
+.filter .filter-btns button {
+  padding: 0.7rem 0.5rem;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+
+.filter .filter-btns .filter-btn-1 {
+  background: #457eb4;
+}
+
+.filter .filter-btns .filter-btn-2 {
+  background: #e5ab5b;
 }
 /*# sourceMappingURL=style.css.map */

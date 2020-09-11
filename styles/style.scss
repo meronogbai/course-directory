@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+input,
+button {
+  border: none;
+}
 .flex {
   display: flex;
 }
@@ -122,7 +126,6 @@ nav {
     }
     .input-form {
       input {
-        border: none;
         width: 80%;
         display: block;
         line-height: 3rem;
@@ -222,7 +225,6 @@ nav {
   }
   button {
     background-color: $light-text;
-    border: none;
     padding: 1rem;
   }
   @media (max-width: $tablet) {
@@ -259,7 +261,7 @@ nav {
   }
 }
 
-footer {
+.homepage-ftr {
   padding-top: 2rem;
   background-color: #000;
   a {
@@ -309,7 +311,7 @@ footer {
   }
   .search-btn {
     background-color: #181818;
-    border: none;
+
     color: $light-text;
     line-height: 3rem;
     padding: 0 1.5rem;
@@ -319,5 +321,59 @@ footer {
     background-color: #1f1f1f;
     color: $third-reason;
     padding: 1.7rem 1rem;
+  }
+}
+
+//filter
+
+.filter {
+  text-align: center;
+  background: rgba($secondary-color, 0.8);
+  margin: 4rem 0;
+  padding: 2rem;
+  .filter-items > * {
+    margin: 3rem 0.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: $third-reason;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  h1,
+  h2 {
+    font-weight: $imp-text;
+  }
+  input {
+    display: block;
+  }
+  select {
+    border: none;
+    appearance: none;
+    width: 100%;
+    background: #fff url("/images/caret-down-solid.svg") center right 0.2rem
+      no-repeat;
+  }
+  input,
+  select {
+    padding: 0.5rem 0.1rem;
+    border-radius: 0.3rem;
+  }
+  .filter-btns {
+    text-align-last: left;
+    button {
+      padding: 0.7rem 0.5rem;
+      color: $light-text;
+      border-radius: 0.2rem;
+    }
+    .filter-btn-1 {
+      background: #457eb4;
+    }
+    .filter-btn-2 {
+      background: #e5ab5b;
+    }
   }
 }
