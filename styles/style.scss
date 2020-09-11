@@ -106,7 +106,7 @@ nav {
 //section with bg image and search box
 
 .search {
-  background: #eee url("/images/homepage-bg.jpg") center top no-repeat;
+  background: #eee url("images/homepage-bg.jpg") center top no-repeat;
   background-size: cover;
   padding: 15rem 25%;
   @media (max-width: $phone) {

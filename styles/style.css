@@ -111,7 +111,7 @@ nav .nav-links i {
 }
 
 .search {
-  background: #eee url("/images/homepage-bg.jpg") center top no-repeat;
+  background: #eee url("images/homepage-bg.jpg") center top no-repeat;
   background-size: cover;
   padding: 15rem 25%;
 }
