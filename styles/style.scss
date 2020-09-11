@@ -91,7 +91,11 @@ nav {
       }
     }
   }
+  @media (max-width: $tablet) {
+    padding-right: 13rem;
+  }
   @media (max-width: $phone) {
+    padding-right: 2rem;
     flex-direction: column;
     align-items: center;
     i {
@@ -421,9 +425,12 @@ footer {
 }
 
 //details
+.main-result {
+  padding: 0 2rem 3rem;
+}
 
 .details {
-  margin: 9rem 2rem;
+  margin-top: 9rem;
   font-weight: $imp-text;
   padding: 0.5rem;
   box-shadow: -0.3rem -0.1rem 1rem 0.1rem $secondary-color;
@@ -471,6 +478,41 @@ footer {
         margin: 0;
         padding: 0.5rem;
       }
+    }
+  }
+}
+
+.details-text {
+  font-size: 1.4rem;
+  margin: 1.6rem 0;
+}
+
+.more-details {
+  margin: 1.6rem 0;
+  display: block;
+  padding: 2rem 3rem;
+  font-size: 1.7rem;
+  color: $dark-text;
+  background-color: #f5f5f5;
+  letter-spacing: 0.5rem;
+}
+
+//student reviews
+
+.student-reviews {
+  font-size: 1.6rem;
+  h3 {
+    color: $primary-color;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .student-review-items > * {
+    display: flex;
+    margin: 1rem 0;
+    .cmnt {
+      margin-left: 1rem;
     }
   }
 }
