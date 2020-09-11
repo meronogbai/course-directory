@@ -5,9 +5,9 @@ $tertiary-color: #519bd7;
 $quaternary-color: #99a4a6;
 $light-text: #fff;
 $dark-text: #4c4851;
-$mildly-imp-text: 600;
-$imp-text: 700;
-$very-imp-text: 900;
+$mildly-imp-text: 500;
+$imp-text: 600;
+$very-imp-text: 700;
 $tablet: 1023px;
 $phone: 767px;
 
@@ -318,7 +318,6 @@ footer {
   }
   .search-btn {
     background-color: #181818;
-
     color: $light-text;
     line-height: 3rem;
     padding: 0 1.5rem;

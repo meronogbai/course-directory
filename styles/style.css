@@ -71,7 +71,7 @@ nav i {
 
 nav .brand {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: -15px;
 }
 
@@ -125,14 +125,14 @@ nav .nav-links i {
 
 .search h1 {
   font-size: 2.9rem;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   color: #fff;
 }
 
 @media (max-width: 767px) {
   .search h1 {
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -210,7 +210,7 @@ nav .nav-links i {
 .four-steps h1 {
   color: #d35649;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -238,7 +238,7 @@ nav .nav-links i {
 
 .four-steps h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 1.5rem 0;
 }
 
@@ -253,7 +253,7 @@ nav .nav-links i {
 
 .reason h3 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .reason p {
@@ -327,7 +327,7 @@ footer a {
 
 footer h4 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 2rem 0;
 }
 
@@ -335,7 +335,7 @@ footer .top-ftr {
   border: 1px #181818;
   border-style: solid none;
   padding: 1rem 5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 footer .top-ftr .top-ftr-logo {
@@ -432,7 +432,7 @@ footer .btm-ftr {
 
 .filter h1,
 .filter h2 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .filter input {
@@ -489,7 +489,7 @@ footer .btm-ftr {
 }
 
 .results h3 span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .results .results-wrapper {
@@ -520,7 +520,7 @@ footer .btm-ftr {
 
 .details {
   margin-top: 9rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.5rem;
   -webkit-box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
           box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
