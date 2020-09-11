@@ -28,7 +28,7 @@ This project uses HTML &amp; SASS to build a responsive website for 3 different 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/meronokbay/course-directory/issues).
 
 ## Show your support
 
