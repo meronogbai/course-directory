@@ -36,5 +36,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I built this project using the design layout of PatashuleKE by Mathew Njuguna and Sam Achola.
+- I built this project using the design layout of [PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE) by Mathew Njuguna and Sam Achola.
 - I also used assets from Google Fonts and Font Awesome.
