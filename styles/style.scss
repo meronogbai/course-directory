@@ -1,0 +1,639 @@
+//vars
+$primary-color: #d35649;
+$secondary-color: #bebdbd;
+$tertiary-color: #519bd7;
+$quaternary-color: #99a4a6;
+$light-text: #fff;
+$dark-text: #4c4851;
+$mildly-imp-text: 500;
+$imp-text: 600;
+$very-imp-text: 700;
+$tablet: 1023px;
+$phone: 767px;
+
+//mixins
+
+@mixin rounded-border {
+  border-radius: 7px;
+}
+//general styles
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $dark-text;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+}
+
+select {
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.a-center {
+  align-items: center;
+}
+
+//navbar
+
+nav {
+  background: $primary-color;
+  padding: 2rem;
+
+  a {
+    color: $light-text;
+    font-size: 1.4rem;
+  }
+
+  i {
+    margin: 0.5rem;
+  }
+
+  .brand {
+    font-size: 4rem;
+    font-weight: $imp-text;
+    margin-top: -15px;
+  }
+
+  .nav-links {
+    i {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: $tablet) {
+      .nav-link {
+        margin: 0 1.5rem;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-right: 13rem;
+  }
+
+  @media (max-width: $phone) {
+    padding-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+
+    i {
+      margin: 1rem 0;
+    }
+  }
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: #000;
+
+  a {
+    color: $light-text;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: $imp-text;
+    padding: 2rem 0;
+  }
+
+  .top-ftr {
+    border: 1px #181818;
+    border-style: solid none;
+    padding: 1rem 5rem;
+    font-weight: $imp-text;
+
+    .top-ftr-logo {
+      border-radius: 50%;
+      background-color: #000;
+      font-size: 2.5rem;
+      border: 1px solid #181818;
+      padding: 2rem;
+    }
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+
+      & > * {
+        margin: 2rem 0;
+      }
+
+      div {
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  .middle-ftr {
+    padding: 0 5rem 2rem;
+    text-align: center;
+    color: $light-text;
+    font-size: 1.2rem;
+
+    a {
+      color: $primary-color;
+    }
+
+    .middle-ftr-item {
+      flex-basis: 33.33%;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  .search-btn {
+    background-color: #181818;
+    color: $light-text;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .btm-ftr {
+    background-color: #1f1f1f;
+    color: $quaternary-color;
+    padding: 1.7rem 1rem;
+
+    i {
+      padding-right: 1rem;
+    }
+  }
+}
+
+//steps
+
+.four-steps {
+  padding: 4rem 6rem;
+  text-align: center;
+  line-height: 1.3;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    font-weight: $imp-text;
+    text-align: center;
+  }
+
+  .wrapper {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 7rem;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: $imp-text;
+    padding: 1.5rem 0;
+  }
+
+  .step-text {
+    font-size: 1.5rem;
+  }
+}
+
+//reasons
+
+.reason {
+  color: $light-text;
+  padding: 1rem 5rem;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: $mildly-imp-text;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+  }
+
+  button {
+    background-color: $light-text;
+    padding: 1rem;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 1rem 3rem;
+  }
+
+  @media (max-width: $phone) {
+    flex-direction: column-reverse;
+
+    img {
+      margin-bottom: 1rem;
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+
+//filter
+
+.filter {
+  text-align: center;
+  background: rgba($secondary-color, 0.8);
+  margin: 4rem 0;
+  padding: 2rem;
+
+  .filter-items {
+    @media (max-width: $phone) {
+      flex-direction: column;
+    }
+  }
+
+  .filter-items > * {
+    margin: 3rem 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    color: $quaternary-color;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  h1,
+  h2 {
+    font-weight: $imp-text;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  select {
+    border: none;
+    appearance: none;
+    width: 100%;
+    background:
+      #fff url("/images/caret-down-solid.svg") center right 0.2rem
+      no-repeat;
+  }
+
+  input,
+  select {
+    padding: 0.5rem 5rem;
+    border-radius: 0.3rem;
+
+    @media (max-width: $tablet) {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .filter-btns {
+    text-align-last: left;
+  }
+
+  button {
+    padding: 0.7rem 0.5rem;
+    color: $light-text;
+    border-radius: 0.2rem;
+  }
+
+  .filter-btn-1 {
+    background: #457eb4;
+  }
+
+  .filter-btn-2 {
+    background: #e5ab5b;
+  }
+}
+
+//map
+
+.map {
+  h2 {
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+//results
+
+.results {
+  margin: 13rem 0;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    color: $light-text;
+  }
+
+  span {
+    font-weight: $imp-text;
+  }
+
+  .results-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin: 0 2rem;
+
+    .result-item {
+      background: #d95f4b;
+      padding: 9rem 0 12rem;
+    }
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+//details
+.main-result {
+  padding: 0 2rem 3rem;
+}
+
+.details {
+  margin-top: 9rem;
+  font-weight: $imp-text;
+  padding: 0.5rem;
+  box-shadow: -0.3rem -0.1rem 1rem 0.1rem $secondary-color;
+
+  @media (max-width: $phone) {
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  .detail-items {
+    margin: 1rem 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    .detail-item {
+      padding: 1rem 0;
+      border: 1px solid $secondary-color;
+      border-radius: 0.3rem;
+    }
+  }
+
+  span {
+    color: $tertiary-color;
+  }
+
+  button {
+    background-color: $tertiary-color;
+    color: $light-text;
+    padding: 0.5rem;
+    float: right;
+  }
+
+  .contact {
+    padding: 1rem 0;
+    clear: right;
+
+    i {
+      color: $tertiary-color;
+    }
+
+    .contact-item {
+      margin-left: 1rem;
+    }
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+      align-items: center;
+
+      .contact-item {
+        margin: 0;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+//section with bg image and search box
+
+.search {
+  background: #eee url("../images/homepage-bg.jpg") center top no-repeat;
+  background-size: cover;
+  padding: 15rem 25%;
+
+  @media (max-width: $phone) {
+    padding: 8rem 2rem 1rem;
+    height: 90vh;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+    font-weight: $very-imp-text;
+    text-align: center;
+    color: $light-text;
+
+    @media (max-width: $phone) {
+      font-weight: $imp-text;
+    }
+  }
+
+  .search-box {
+    margin: 2rem auto;
+    padding: 4rem;
+    background-color: rgba($secondary-color, 0.8);
+    font-size: 1.7rem;
+
+    @include rounded-border();
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .input-form {
+      input {
+        width: 80%;
+        display: block;
+        line-height: 3rem;
+      }
+
+      .search-btn {
+        width: 10rem;
+        background-color: $primary-color;
+        color: $light-text;
+        line-height: 3rem;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+          background-color: $tertiary-color;
+        }
+      }
+    }
+
+    @media (max-width: $phone) {
+      padding: 2rem;
+
+      .input-form {
+        flex-direction: column;
+        justify-content: space-between;
+
+        input {
+          width: 100%;
+        }
+
+        .search-btn {
+          margin: auto;
+          width: 100%;
+          background-color: $primary-color;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .small-btn {
+    font-size: 1.8rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: $secondary-color;
+    color: $dark-text;
+
+    @include rounded-border();
+  }
+}
+
+.reason:nth-child(1) {
+  background-color: $primary-color;
+
+  button {
+    color: $primary-color;
+  }
+}
+
+.reason:nth-child(2) {
+  background-color: $tertiary-color;
+
+  button {
+    color: $tertiary-color;
+  }
+}
+
+.reason:nth-child(3) {
+  background-color: $quaternary-color;
+
+  button {
+    color: $quaternary-color;
+  }
+}
+
+.details-text {
+  font-size: 1.4rem;
+  margin: 1.6rem 0;
+}
+
+.more-details {
+  margin: 1.6rem 0;
+  display: block;
+  padding: 2rem 3rem;
+  font-size: 1.7rem;
+  color: $dark-text;
+  background-color: #f5f5f5;
+  letter-spacing: 0.5rem;
+}
+
+//student reviews
+
+.student-reviews {
+  font-size: 1.6rem;
+
+  h3 {
+    color: $primary-color;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .review-item i {
+    font-size: 3rem;
+  }
+
+  .student-review-items > * {
+    display: flex;
+    margin: 1rem 0;
+
+    .cmnt {
+      margin-left: 1rem;
+    }
+  }
+}
