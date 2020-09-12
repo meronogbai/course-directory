@@ -197,13 +197,17 @@ footer .btm-ftr {
   padding: 1.7rem 1rem;
 }
 
+footer .btm-ftr i {
+  padding-right: 1rem;
+}
+
 .four-steps {
   padding: 4rem 6rem;
   text-align: center;
   line-height: 1.3;
 }
 
-.four-steps h1 {
+.four-steps h2 {
   color: #d35649;
   font-size: 2.5rem;
   font-weight: 600;
@@ -232,7 +236,7 @@ footer .btm-ftr {
   font-size: 3rem;
 }
 
-.four-steps h2 {
+.four-steps h3 {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.5rem 0;

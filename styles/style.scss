@@ -190,6 +190,10 @@ footer {
     background-color: #1f1f1f;
     color: $quaternary-color;
     padding: 1.7rem 1rem;
+
+    i {
+      padding-right: 1rem;
+    }
   }
 }
 
@@ -200,7 +204,7 @@ footer {
   text-align: center;
   line-height: 1.3;
 
-  h1 {
+  h2 {
     color: $primary-color;
     font-size: 2.5rem;
     font-weight: $imp-text;
@@ -223,7 +227,7 @@ footer {
     font-size: 3rem;
   }
 
-  h2 {
+  h3 {
     font-size: 2rem;
     font-weight: $imp-text;
     padding: 1.5rem 0;
