@@ -2,7 +2,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -32,31 +32,31 @@ select {
 
 .j-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .j-center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .j-end {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .j-around {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .a-center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav {
@@ -87,6 +87,7 @@ nav .nav-links i {
   nav .nav-links .nav-link {
     margin: 0 1.5rem;
   }
+
   nav .nav-links span {
     display: none;
   }
@@ -103,12 +104,13 @@ nav .nav-links i {
     padding-right: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   nav i {
     margin: 1rem 0;
   }
@@ -148,12 +150,14 @@ footer .top-ftr .top-ftr-logo {
   footer .top-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   footer .top-ftr > * {
     margin: 2rem 0;
   }
+
   footer .top-ftr div {
     margin: 2rem 0;
   }
@@ -172,15 +176,15 @@ footer .middle-ftr a {
 
 footer .middle-ftr .middle-ftr-item {
   -ms-flex-preferred-size: 33.33%;
-      flex-basis: 33.33%;
+  flex-basis: 33.33%;
 }
 
 @media (max-width: 1023px) {
   footer .middle-ftr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -218,17 +222,17 @@ footer .btm-ftr i {
   margin-top: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem 7rem;
 }
 
 @media (max-width: 1023px) {
   .four-steps .wrapper {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr) [4];
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -282,9 +286,10 @@ footer .btm-ftr i {
   .reason {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
+
   .reason img {
     margin-bottom: 1rem;
     width: 15rem;
@@ -303,8 +308,8 @@ footer .btm-ftr i {
   .filter .filter-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -336,8 +341,8 @@ footer .btm-ftr i {
 .filter select {
   border: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   background: #fff url("/images/caret-down-solid.svg") center right 0.2rem no-repeat;
 }
@@ -412,8 +417,8 @@ footer .btm-ftr i {
 .results .results-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   text-align: center;
   margin: 0 2rem;
@@ -427,7 +432,7 @@ footer .btm-ftr i {
 @media (max-width: 1023px) {
   .results .results-wrapper {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -440,7 +445,7 @@ footer .btm-ftr i {
   font-weight: 600;
   padding: 0.5rem;
   -webkit-box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
-          box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
+  box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
 }
 
 @media (max-width: 767px) {
@@ -459,15 +464,15 @@ footer .btm-ftr i {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.7rem;
 }
 
 @media (max-width: 1023px) {
   .details .detail-items {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -505,12 +510,13 @@ footer .btm-ftr i {
   .details .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .details .contact .contact-item {
     margin: 0;
     padding: 0.5rem;
@@ -579,18 +585,21 @@ footer .btm-ftr i {
   .search .search-box {
     padding: 2rem;
   }
+
   .search .search-box .input-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   .search .search-box .input-form input {
     width: 100%;
   }
+
   .search .search-box .input-form .search-btn {
     margin: auto;
     width: 100%;
@@ -672,4 +681,3 @@ footer .btm-ftr i {
 .student-reviews .student-review-items > * .cmnt {
   margin-left: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
