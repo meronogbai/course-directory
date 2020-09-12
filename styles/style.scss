@@ -353,10 +353,28 @@ footer {
   }
 }
 
+//map
+
+.map {
+  h2 {
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  img {
+    width: 100%;
+  }
+}
 //results
 
 .results {
-  margin-bottom: 4rem;
+  margin: 13rem 0;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 4rem;
+  }
 
   h2 {
     font-size: 2rem;

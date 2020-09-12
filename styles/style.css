@@ -369,8 +369,25 @@ footer .btm-ftr {
   background: #e5ab5b;
 }
 
+.map h2 {
+  font-size: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  color: #d35649;
+}
+
+.map img {
+  width: 100%;
+}
+
 .results {
-  margin-bottom: 4rem;
+  margin: 13rem 0;
+}
+
+@media (max-width: 1023px) {
+  .results {
+    margin-bottom: 4rem;
+  }
 }
 
 .results h2 {
