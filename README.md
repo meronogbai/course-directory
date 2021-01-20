@@ -2,15 +2,14 @@
 
 > This project is a directory of hot online coding courses. This project is built to demonstrate mastery of HTML and CSS.
 
-![screenshot](/images/app_screenshot.png)
+![screenshot](./images/app_screenshot.jpg)
 
 This project uses HTML &amp; SASS to build a responsive website for 3 different screen sizes, i.e., mobile, tablet and desktop. Grid and flexbox are used for layout.
 
 ## Built With
 
-- HTML
-- CSS
-- SASS
+- HTML & CSS
+- Sass
 
 ## Live Demo
 
